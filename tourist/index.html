@@ -7,6 +7,7 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/6c2fc69305.js" crossorigin="anonymous"></script>
   <style>
 		.parallax-container {
 			position: absolute;
@@ -24,30 +25,52 @@
 			left: 0;
 			width: 100%;
 		}
+		
+    @font-face {
+      font-family: nunibold;
+      src: url(../font/Nunito-Bold.ttf);
+    }
+    @font-face {
+      font-family: nunilar;
+      src: url(../font/Nunito-Regular.ttf);
+    }
+
+		a {
+      font-family: nunilar;
+      text-decoration: none;
+      color: black;
+    }
+    a:hover{
+      color: rgba(75,16,121,1);
+    }
+    h1 h2 h3 h4 h5 h6 {
+      font-family: nunibold;
+    }
+    p {
+      font-family: nunilar;
+    }
 	</style>
 </head>
-<body style="padding-top: 300px;">
+<body>
   <!-- header -->
-	<div class="container-fluid">
-		<div class="container text-center header">
+	<div class="container-fluid pt-4"  style="height: 66.5vw; padding-bottom: 0px !important; margin-bottom: 0px !important;">
+
+		<!-- nav -->
+		<div class="container d-flex justify-content-center flex-column" style="height: 50px; backdrop-filter: blur(2px); background-color: rgba(255, 255, 255, 0.8); border-radius: 100px; box-shadow: 0 2px 5px 1px rgba(0,0,0,0.35);">
+      <div class="row p-2">
+        <div class="col-5 ps-4"><a href="../index.html">HOME</a></div>
+        <div class="col-2"><a href="../profile/index.html">PROFILE</a></div>
+        <div class="col-2"><a href="../hometown/index.html">HOMETOWN</a></div>
+        <div class="col-2"><a href="../tourist/index.html">TOURIST</a></div>
+        <div class="col-1"><a href="../food/index.html">FOOD</a></div>
+      </div>
+    </div>
+
+		<div class="container text-center header justify-content-center" style="padding-top: 30vh">
 			<h3 class="text-white">Blitar Tourist Destination</h3>
 			<p class="text-white">Blitar got a lot of tourist destinations such as Kelud Mountain, Teletubbies Hill, beach, monuments, and Bung Karno's grave</p>
 			<div style="display: flex; align-items: center; justify-content: center;">
 				<span class="line" style="margin-right: 5px;"></span>
-			</div>
-
-			<br>
-			<h6 class="text-white">Destination Selection</h6>
-			<div class="dropdown" style="display: flex; justify-content: space-evenly;">
-				<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-					aria-expanded="false" style="background-color: #E8E4E1; width: 200px; height: 40px;">
-					<img src="assets/icon/train.svg" alt="" style="margin: auto 5px;">Hit it!
-				</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-					<li><a class="dropdown-item" href="#">Kelud Mountain</a></li>
-					<li><a class="dropdown-item" href="#">Teletubbies Hill</a></li>
-					<li><a class="dropdown-item" href="#">Gondo Mayit Beach</a></li>
-				</ul>
 			</div>
 		</div>
 	</div>
@@ -61,14 +84,46 @@
 		<img id="parallax-6" src="6.png" alt="">
 	</section>
 
-  <div class="container-fluid">
+  <div class="container-fluid" style="background: #26203A;" style="padding-top: 0px !important; margin-top: 0px !important;">
     <div class="container">
       <div class="row justify-content-center">
-        Kelud Mountain is an active volcano. There are many tremendous views in it. It is also a nice hiking destination. The hiking track is less dangerous.
-        This mountain can be accessed in a regular way. We can ride our vehicle to some spot, but it will still acquire us to walk a few more to reach the top. To get to the highest top, we need to go through the hiking track.
 
-        Kelud got some controversial history. It was contested by Blitar and Kediri.
+				<div class="col-4">
+					<img src="tourist-1.png" alt="" class="col-12">
+					<i class="fas fa-umbrella-beach" style="color: #E0E0E0;"></i>
+					<h5 style="color: #E0E0E0;">Gondo Mayit Beach</h5>
+					<p style="color: #E0E0E0;">
+						Gondo Mayit Beach in Blitar is a relatively new beach. Gondo Mayit itself means gondo is smell and corpse is corpse. So when combined, the name of this beach is the smell of corpses. But it's just name, there will be no smell of corpses while visitors are on this beach.
+						Although sometimes used as a place to meditate, this beach has a beautiful view. This view is what attracts visitors to this beach. To get to this beach, you can use a car or walk from Tambak Rejo Beach. Tambak Rejo Beach is also a beautiful beach, but I don't recommend to visit it in the afternoon. It will be so hot.
+					</p>
+				</div>
+
+				<div class="col-4">
+					<img src="tourist-2.png" alt="" class="col-12">
+					<i class="fas fa-mountain" style="color: #E0E0E0;"></i>
+					<h5 style="color: #E0E0E0;">Kelud</h5>
+					<p style="color: #E0E0E0;">
+						Kelud Mountain is an active volcano. There are many tremendous views in it. It is also a nice hiking destination. The hiking track is less dangerous.
+						This mountain can be accessed in a regular way. We can ride our vehicle to some spot, but it will still acquire us to walk a few more to reach the top. To get to the highest top, we need to go through the hiking track.
+						Kelud got some controversial history. It was contested by Blitar and Kediri.
+					</p>
+				</div>
+
+				<div class="col-4">
+					<img src="tourist-3.png" alt="" class="col-12">
+					<i class="fas fa-mountain" style="color: #E0E0E0;"></i>
+					<h5 style="color: #E0E0E0;">Teletubbies Hill</h5>
+					<p style="color: #E0E0E0;">
+						Teletubbies Hill is a fascinating place. Its' scenery is beautiful. It's not too far from my home and it's easy to get there. There would be more joy if visiting it in the evening.
+					</p>
+				</div>
+
       </div>
+			<div class="row justify-content-center">
+				<p>
+
+				</p>
+			</div>
     </div>
   </div>
 
